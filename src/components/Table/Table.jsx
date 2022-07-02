@@ -8,38 +8,38 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "./Table.css";
 
-function createData(name, trackingId, date, status) {
-  return { name, trackingId, date, status };
+function createData(name, appId, serviceType, salonName, address, contactNo) {
+  return { name, appId, serviceType, salonName, address, contactNo };
 }
 
 const rows = [
-  createData("Lasania Chiken Fri", 18908424, "2 March 2022", "Approved"),
-  createData("Big Baza Bang ", 18908424, "2 March 2022", "Pending"),
-  createData("Mouth Freshner", 18908424, "2 March 2022", "Approved"),
-  createData("Cupcake", 18908421, "2 March 2022", "Delivered"),
+  createData("Aman Kumar", 18908424, "Home Service", "Men Salon", "Mohali, Punjab", "4385734"),
+  createData("Vineeta", 18938428, "On Shop", "Women Buityy", "Chandigarh, India", "657834"),
+  createData("Ashneer Grover", 18908425, "Home Service", "HEllo Salon", "Mohali, Punjab", "4328746"),
+  createData("Harsh", 18908421, "Road pe", "XXXX", "New Delhi", "3276487"),
 ];
 
-
-const makeStyle = (status) => {
-  if (status === 'Approved') {
-    return {
-      background: 'rgb(145 254 159 / 47%)',
-      color: 'green',
-    }
-  }
-  else if (status === 'Pending') {
-    return {
-      background: '#ffadad8f',
-      color: 'red',
-    }
-  }
-  else {
-    return {
-      background: '#59bfff',
-      color: 'white',
-    }
-  }
-}
+// This is for the payment status 
+// const makeStyle = (status) => {
+//   if (status === 'Approved') {
+//     return {
+//       background: 'rgb(145 254 159 / 47%)',
+//       color: 'green',
+//     }
+//   }
+//   else if (status === 'Pending') {
+//     return {
+//       background: '#ffadad8f',
+//       color: 'red',
+//     }
+//   }
+//   else {
+//     return {
+//       background: '#59bfff',
+//       color: 'white',
+//     }
+//   }
+// }
 
 export default function BasicTable() {
   return (
@@ -72,14 +72,17 @@ export default function BasicTable() {
                 key={row.name}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
-                <TableCell component="th" scope="row">
+                <TableCell component="th" scope="row">  
                   {row.name}
                 </TableCell>
-                <TableCell align="left">{row.trackingId}</TableCell>
-                <TableCell align="left">{row.date}</TableCell>
-                <TableCell align="left">
-                  {/* <span className="status" style={makeStyle(row.status)}>{row.status}</span> */}
-                </TableCell>
+                <TableCell align="left">{row.appId}</TableCell>
+                <TableCell align="left">{row.serviceType}</TableCell>
+                <TableCell align="left">{row.salonName}</TableCell>
+                <TableCell align="left">{row.address}</TableCell>
+                <TableCell align="left">{row.contactNo}</TableCell>
+                {/* <TableCell align="left">
+                  <span className="status" style={makeStyle(row.status)}>{row.status}</span>
+                </TableCell> */}
                 <TableCell align="left" className="Details">Details</TableCell>
               </TableRow>
             ))}
