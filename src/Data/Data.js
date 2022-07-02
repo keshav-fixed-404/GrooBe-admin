@@ -39,6 +39,10 @@ import {
       icon: UilChart,
       heading: 'Analytics'
     },
+    {
+      icon: UilUsersAlt,
+      heading: 'Appointments'
+    }
   ];
   
   // Analytics Cards Data
@@ -119,37 +123,50 @@ import {
     {
       img: img1,
       name: "Andrew Thomas",
-      noti: "has ordered Apple smart watch 2500mh battery.",
+      // noti: "has ordered Apple smart watch 2500mh battery.",
+      serviceType: "Service Type",
+      salonName: "Salon Name",
+      address: "Address",
       time: "25 seconds ago",
     },
     {
       img: img2,
       name: 'James Bond',
-      noti: "has received Samsung gadget for charging battery.",
+      serviceType: "Service Type",
+      salonName: "Salon Name",
+      address: "Address",
       time: "30 minutes ago",
     }, 
     {
       img: img3,
       name: "Iron Man",
-      noti: "has ordered Apple smart watch, samsung Gear 2500mh battery.",
+      serviceType: "Service Type",
+      salonName: "Salon Name",
+      address: "Address",
       time: "2 hours ago",
     },
     {
       img: img1,
       name: "Andrew Thomas",
-      noti: "has ordered Apple smart watch 2500mh battery.",
+      serviceType: "Service Type",
+      salonName: "Salon Name",
+      address: "Address",
       time: "25 seconds ago",
     },
     {
       img: img2,
       name: 'James Bond',
-      noti: "has received Samsung gadget for charging battery.",
+      serviceType: "Service Type",
+      salonName: "Salon Name",
+      address: "Address",
       time: "30 minutes ago",
     }, 
     {
       img: img3,
       name: "Iron Man",
-      noti: "has ordered Apple smart watch, samsung Gear 2500mh battery.",
+      serviceType: "Service Type",
+      salonName: "Salon Name",
+      address: "Address",
       time: "2 hours ago",
     },
     
