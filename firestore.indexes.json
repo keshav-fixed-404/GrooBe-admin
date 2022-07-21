@@ -1,0 +1,19 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "appointment",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "clUid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "appTime",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
